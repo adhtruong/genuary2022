@@ -20,3 +20,37 @@ exclude = '''
                      # the root of the project
 )
 '''
+
+[tool.isort]
+line_length = 120
+
+[tool.pytest.ini_options]
+addopts = "-ra -v --durations=5 --cov=src"
+
+# Coverage ----------------------------------------------
+## http://coverage.readthedocs.io/en/latest/config.html
+[tool.coverage.run]
+branch = true
+source = ["src"]
+data_file = ".coverage.unittest"
+omit = [
+    "*/site-packages/*",
+    "__init__.py",
+    "*__init__.py",
+    "app.py",
+    "main.py",
+    "*/test/*",
+    "*/tests/*",
+    "*/test_*",
+    "*_test.py",
+]
+
+[tool.coverage.report]
+# Regexes for lines to exclude from consideration
+exclude_lines = [
+  "pragma: no cover",
+  "def __repr__",
+  "if self.debug",
+  "raise NotImplementedError",
+  "if __name__ == .__main__.:",
+]
