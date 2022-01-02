@@ -42,6 +42,7 @@ def get_surface(width: int, height: int, output: str) -> Iterator[Surface]:
 class Context(_Context):
     def square(self, x: float, y: float, size: float) -> None:
         self.rectangle(x, y, size, size)
+        self.close_path()
 
     def circle(self, xc: float, yc: float, radius: float) -> None:
         self.arc(xc, yc, radius, 0, 2 * math.pi)

@@ -1,4 +1,4 @@
-# Template Python Project
+# Genuary 2022
 
 <p align="center">
     <a href="https://codecov.io/gh/{{ repo }}">
@@ -12,7 +12,7 @@
     </a>
 </p>
 
-Template python project that sets up standard developer requirements, precommits and CI tools.
+Repo for https://genuary.art/ (Github: https://github.com/genuary2022/genuary2022.github.io)
 
 ## Development Set Up
 
