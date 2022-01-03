@@ -16,6 +16,8 @@ Repo for https://genuary.art/ (Github: https://github.com/genuary2022/genuary202
 
 ## Development Set Up
 
+Requires Python 3.9+.
+
 ```
     pip install -r requirements-dev.txt
     pre-commit install
