@@ -25,13 +25,13 @@ exclude = '''
 line_length = 120
 
 [tool.pytest.ini_options]
-addopts = "-ra -v --durations=5 --cov=src"
+addopts = "-ra -v --durations=5 --cov=pycairo_util"
 
 # Coverage ----------------------------------------------
 ## http://coverage.readthedocs.io/en/latest/config.html
 [tool.coverage.run]
 branch = true
-source = ["src"]
+source = ["pycairo_util"]
 data_file = ".coverage.unittest"
 omit = [
     "*/site-packages/*",
