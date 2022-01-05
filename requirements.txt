@@ -1,1 +1,2 @@
+opensimplex==0.4
 pycairo==1.20.1
