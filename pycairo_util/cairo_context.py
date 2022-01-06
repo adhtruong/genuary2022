@@ -7,6 +7,7 @@ from cairo import Context as _Context
 from cairo import ImageSurface, Surface
 
 from pycairo_util.core import register, run
+from pycairo_util.video import render_canvases
 
 
 @register
@@ -75,3 +76,18 @@ def export(**kwargs: Any) -> None:
         draw = get_entry_point()
 
     run(draw, **kwargs)
+
+
+def export_video(frames: int = 60, frame_rate: int = 30, output: str = "output.mp4", **kwargs) -> None:
+    if "draw" in kwargs:
+        draw = kwargs["draw"]
+    else:
+        draw = get_entry_point()
+
+    def render(output: str, frame: int) -> None:
+        nonlocal kwargs
+        kwargs_copy = kwargs.copy()
+        kwargs_copy.update(output=output, frame=frame, percent=frame / frames)
+        run(draw, **kwargs_copy)
+
+    render_canvases(render, frames, frame_rate, output)
