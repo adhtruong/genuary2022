@@ -29,7 +29,7 @@ def draw(context: Context, size: int, previous: str) -> None:
 def main() -> None:
     for module in _PREVIOUS:
         _, module_name = module.split(".")
-        export(output=f"run/output_{module_name}.png", previous=module)
+        export(output=f"run/21_output_{module_name}.png", previous=module)
 
 
 if __name__ == "__main__":
