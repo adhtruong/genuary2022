@@ -1,9 +1,6 @@
 # Genuary 2022
 
 <p align="center">
-    <a href="https://codecov.io/gh/{{ repo }}">
-        <img src="https://codecov.io/gh/{{ repo }}/main/graph/badge.svg?token=4I7OINJKAO"/>
-    </a>
     <a href="https://github.com/psf/black">
         <img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg">
     </a>
@@ -22,3 +19,7 @@ Requires Python 3.9+.
     pip install -r requirements-dev.txt
     pre-commit install
 ```
+
+## Develop Notes
+
+Note that modules have been improperly named in favour of letting the order be clearer.
