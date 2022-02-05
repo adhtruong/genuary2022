@@ -37,7 +37,7 @@ def draw(context: Context, size: int) -> None:
 
     total = 10_000
     iterations = 10
-    nesting = int(total / (iterations ** 2))
+    nesting = int(total / (iterations**2))
     tile_size = size / iterations
     for row, column in product(range(iterations), repeat=2):
         render_tile(context, tile_size, row, column, nesting)

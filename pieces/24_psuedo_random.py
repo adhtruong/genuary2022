@@ -18,7 +18,7 @@ class RandomNumberGenerator:
                 2 * self._length,
             )[half_length : 3 * half_length]
         )
-        return self._current / (10 ** self._length)
+        return self._current / (10**self._length)
 
 
 def draw(context: Context, size: int) -> None:

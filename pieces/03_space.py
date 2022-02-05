@@ -41,8 +41,8 @@ def draw(context: Context, size: int) -> None:
 
     for point in get_points(0, 1000, size):
         for i in range(5):
-            radius = point.radius * 1.005 ** i
-            context.set_grey(point.grey * 1.05 ** i, point.alpha)
+            radius = point.radius * 1.005**i
+            context.set_grey(point.grey * 1.05**i, point.alpha)
             x = radius * cos(point.angle)
             y = radius * sin(point.angle)
             context.circle(x, y, point.size)

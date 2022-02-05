@@ -40,7 +40,7 @@ def draw_hilbert_curve(context: Context, size: float, iterations: int) -> None:
         tuple("A"),
     )
 
-    line_size = size / (2 ** iterations - 1)
+    line_size = size / (2**iterations - 1)
     pieces = 25
     for symbol in symbols:
         if symbol == "F":
