@@ -11,6 +11,13 @@
 
 Repo for https://genuary.art/ (Github: https://github.com/genuary2022/genuary2022.github.io)
 
+## Running
+
+```
+    pip install -r requirements.txt
+    python pieces/<piece>.py
+```
+
 ## Development Set Up
 
 Requires Python 3.9+.
@@ -20,6 +27,6 @@ Requires Python 3.9+.
     pre-commit install
 ```
 
-## Develop Notes
+## Developer Notes
 
 Note that modules have been improperly named in favour of letting the order be clearer.
