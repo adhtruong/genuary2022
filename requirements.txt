@@ -1,4 +1,4 @@
 more-itertools==8.12.0
-opencv-python==4.5.5.62
+opencv-python==4.6.0.66
 opensimplex==0.4.2
 pycairo==1.20.1
